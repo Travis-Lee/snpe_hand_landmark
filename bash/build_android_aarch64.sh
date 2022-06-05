@@ -22,7 +22,6 @@ if [ "$ANDROID_NDK" = "" ]; then
 fi
 
 cmake ../.. \
- -DTARGET_OS=android_64 \
  -DCMAKE_TOOLCHAIN_FILE=$ANDROID_NDK/build/cmake/android.toolchain.cmake \
  -DANDROID_ABI="arm64-v8a" \
  -DANDROID_STL=c++_shared \

@@ -5,13 +5,8 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../snpe/include/zdl)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../config)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../include)
 
-if (${TARGET_OS} STREQUAL "linux")
-   link_directories( ${CMAKE_CURRENT_SOURCE_DIR}/../snpe/lib/x86_64-linux-clang)
-   set(OpenCV_DIR  ${CMAKE_CURRENT_SOURCE_DIR}/../3rdparty/opencv-mobile-3.4.16-ubuntu-1804/share/OpenCV)
-else (${TARGET_OS} STREQUAL "android_64")
-   link_directories( ${CMAKE_CURRENT_SOURCE_DIR}/../snpe/lib/aarch64-android-clang6.0)
-   set(OpenCV_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../3rdparty/opencv-arm64-v8a/sdk/native/jni)
-endif()
+link_directories( ${CMAKE_CURRENT_SOURCE_DIR}/../snpe/lib/aarch64-android-clang6.0)
+set(OpenCV_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../3rdparty/opencv-arm64-v8a/sdk/native/jni)
 
 find_package(OpenCV REQUIRED core highgui imgproc)
 
