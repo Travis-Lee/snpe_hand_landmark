@@ -27,7 +27,7 @@ cmake ../.. \
  -DANDROID_ABI="arm64-v8a" \
  -DANDROID_STL=c++_shared \
  -DANDROID_TOOLCHAIN=clang \
- -DANDROID_PLATFORM=android-21 \
+ -DANDROID_PLATFORM=android-24 \
 
 make -j4 VERBOSE=1
 make install/strip
