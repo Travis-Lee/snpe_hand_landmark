@@ -18,7 +18,7 @@
 #include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/highgui/highgui.hpp>
 
-typedef struct _Hand_Pose_KeyPoint{
+typedef struct _Hand_Landmark_KeyPoint{
    cv::Point2f p;
    float prob;
 }KeyPoint;
