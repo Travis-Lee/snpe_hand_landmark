@@ -7,7 +7,7 @@
 #include <string>
 #include <string.h>
 #include <pthread.h>
-#include "image_engine_error.h"
+#include "g_hand_error.h"
 #include "cJSON.h"
 
 #define G_HAND_POSE_GET_RES 20
