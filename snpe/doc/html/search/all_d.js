@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['onnx_20model_20conversion',['ONNX Model Conversion',['../model_conv_onnx.html',1,'']]],
+  ['off',['OFF',['../group__c__plus__plus__apis.html#gga9c30c3ea63af2f6ab05e0f556df04818a88559a0cfd8250c9d65970cc145c92d4',1,'zdl::DlSystem']]],
+  ['open',['open',['../group__c__plus__plus__apis.html#ga478a3589e407da28c4f4f09484064c8a',1,'zdl::DlContainer::IDlContainer::open(const std::string &amp;filename) noexcept'],['../group__c__plus__plus__apis.html#gad5cdb469186fe29e91ac3b55c901c00d',1,'zdl::DlContainer::IDlContainer::open(const zdl::DlSystem::String &amp;filename) noexcept'],['../group__c__plus__plus__apis.html#ga45603663404683fcecd86590743bd02a',1,'zdl::DlContainer::IDlContainer::open(const std::vector&lt; uint8_t &gt; &amp;buffer) noexcept'],['../group__c__plus__plus__apis.html#gac98bdf584af004af8437ca980d51bd79',1,'zdl::DlContainer::IDlContainer::open(const uint8_t *buffer, const size_t size) noexcept']]],
+  ['operationcalculationtypes',['operationCalculationTypes',['../group__c__plus__plus__apis.html#a32aa7bf0b559657453afa11f0251d712',1,'SnpeUdo_OpCoreInfo_t']]],
+  ['operationsinfo',['operationsInfo',['../group__c__plus__plus__apis.html#aff82067a95690c4f7980c00a2a07b153',1,'SnpeUdo_RegInfo_t']]],
+  ['operationsstring',['operationsString',['../group__c__plus__plus__apis.html#a59c1adffd754c752d771232a0c83bd7f',1,'SnpeUdo_RegInfo_t::operationsString()'],['../group__c__plus__plus__apis.html#a59c1adffd754c752d771232a0c83bd7f',1,'SnpeUdo_ImpInfo_t::operationsString()']]],
+  ['operationtype',['operationType',['../group__c__plus__plus__apis.html#a76e84ddd3aa265612be189a64c9ca366',1,'SnpeUdo_OperationInfo_t::operationType()'],['../group__c__plus__plus__apis.html#a76e84ddd3aa265612be189a64c9ca366',1,'SnpeUdo_OpDefinition_t::operationType()']]],
+  ['operator_20bool',['operator bool',['../group__c__plus__plus__apis.html#ga420e60e9788bfa3b52aa3aab72ea3a5e',1,'zdl::DlSystem::Optional']]],
+  ['operator_2a',['operator*',['../group__c__plus__plus__apis.html#ga4d63736950e982ee8a64e635fe3182be',1,'zdl::DlSystem::Optional::operator*()'],['../group__c__plus__plus__apis.html#ga540e5588dffde890174a282451f73fb9',1,'zdl::DlSystem::Optional::operator*() const']]],
+  ['operator_3d',['operator=',['../group__c__plus__plus__apis.html#ga9d1e668486d2d6212359c79fbf69dd6d',1,'zdl::DlSystem::StringList::operator=()'],['../group__c__plus__plus__apis.html#ga4c69dbf7e25c9fead25fc4584361d00b',1,'zdl::DlSystem::TensorMap::operator=()'],['../group__c__plus__plus__apis.html#ga387d2f5e30343d31a49dd162984ea7bf',1,'zdl::DlSystem::TensorShape::operator=()'],['../group__c__plus__plus__apis.html#gaf837c3aae7e67c9b23f1bc576adb7e12',1,'zdl::DlSystem::TensorShapeMap::operator=()'],['../group__c__plus__plus__apis.html#a7ad7ef13451cb74a35096aa69ff75a13',1,'zdl::DlSystem::UDLContext::operator=(const UDLContext &amp;ctx)'],['../group__c__plus__plus__apis.html#a0fb3bb7b603a5e96142ee0b2863de093',1,'zdl::DlSystem::UDLContext::operator=(UDLContext &amp;&amp;ctx)'],['../group__c__plus__plus__apis.html#a0bea47244381913c18e519e15c5eec71',1,'zdl::DlSystem::UserBufferMap::operator=()']]],
+  ['operator_5b_5d',['operator[]',['../group__c__plus__plus__apis.html#gaf12f64f1a92e4da49be65991fa703e5c',1,'zdl::DlSystem::TensorShape']]],
+  ['oppercoreinfo',['opPerCoreInfo',['../group__c__plus__plus__apis.html#a82bb8d31e7de61fde6d91f8d32050379',1,'SnpeUdo_OperationInfo_t']]],
+  ['optional',['Optional',['../group__c__plus__plus__apis.html#classzdl_1_1DlSystem_1_1Optional',1,'Optional'],['../group__c__plus__plus__apis.html#ga8abdf29c53e2d866ae58f1550b479120',1,'zdl::DlSystem::Optional::Optional()'],['../group__c__plus__plus__apis.html#ga1be7b8458a80c51df74766a3e795a458',1,'zdl::DlSystem::Optional::Optional(const T &amp;v, typename std::enable_if&lt;!std::is_pointer&lt; Q &gt;::value &gt;::type *=0)']]],
+  ['options',['Options',['../group__c__plus__plus__apis.html#classzdl_1_1DiagLog_1_1Options',1,'zdl::DiagLog']]],
+  ['output_5flayer_5fnull_5ferror',['OUTPUT_LAYER_NULL_ERROR',['../enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error.html#ad37770b8e918d914ddb2655d8f4cf2c7',1,'com::qualcomm::qti::snpe::SnpeError::Error']]],
+  ['outputinfos',['outputInfos',['../group__c__plus__plus__apis.html#a87bfb09497a9b89de80a31457aa32b73',1,'SnpeUdo_OperationInfo_t']]],
+  ['outputnames',['outputNames',['../group__c__plus__plus__apis.html#ac3b1174aa2d33b75275b1818fc65864e',1,'SnpeUdo_OperationInfo_t']]],
+  ['outputs',['outputs',['../group__c__plus__plus__apis.html#abe63b1c167be828892c675f8261da3e4',1,'SnpeUdo_OpDefinition_t']]],
+  ['onnx_20setup',['ONNX setup',['../setup_onnx.html',1,'']]],
+  ['overview_20of_20udo',['Overview of UDO',['../udo_overview.html',1,'']]]
+];

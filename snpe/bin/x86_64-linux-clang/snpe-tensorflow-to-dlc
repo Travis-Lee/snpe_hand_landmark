@@ -1,0 +1,52 @@
+#!/usr/bin/env python3
+# =============================================================================
+#
+#  Copyright (c) 2015-2016,2018-2020 Qualcomm Technologies, Inc.
+#  All Rights Reserved.
+#  Confidential and Proprietary - Qualcomm Technologies, Inc.
+#
+# =============================================================================
+
+
+import traceback
+
+import tensorflow as tf
+import sys
+
+try:
+    import qti.aisw
+except ImportError as ie1:
+    print("Failed to find necessary python package")
+    print(str(ie1))
+    print("Please ensure that $SNPE_ROOT/lib/python is in your PYTHONPATH")
+    sys.exit(1)
+
+from qti.aisw.converters.tensorflow import tf_compat_v1
+from qti.aisw.converters.tensorflow.tf_to_ir import TFConverter
+from qti.aisw.converters.tensorflow.util import ConverterError
+from qti.aisw.converters.backend import ir_to_native_backend
+from qti.aisw.converters.common.utils.converter_utils import *
+
+
+def main():
+    parser = TFConverter.ArgParser(backend_framework="DLC")
+    args = parser.parse_args()
+    session = tf_compat_v1.Session(config=tf_compat_v1.ConfigProto(allow_soft_placement=True))
+    with session.as_default():
+        try:
+            converter = TFConverter(session, args)
+            ir_graph = converter.convert()
+            optimized_graph = converter.ir_optimize(ir_graph, perform_axes_to_spatial_first_order=False, chain_eltwise_ops=True)
+            # save native model
+            ir_to_native_backend.save(optimized_graph, converter)
+        except ConverterError as e:
+            log_error("Conversion FAILED: {}".format(str(e)))
+            traceback.print_exc()
+            sys.exit(1)
+        except Exception as e:
+            log_error("Conversion FAILED!")
+            raise e
+
+
+if __name__ == '__main__':
+    main()

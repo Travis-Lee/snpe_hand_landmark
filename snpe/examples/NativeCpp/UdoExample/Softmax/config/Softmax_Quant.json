@@ -1,0 +1,18 @@
+{
+    "UdoPackage_0":
+    {
+        "Operators": [
+            {
+            "type": "Softmax",
+                "inputs":[
+                    {"name":"Placeholder2", "data_type": "UINT_8", "quantization_mode": "TF"}
+                ],
+                "outputs":[
+                    {"name":"Output2","data_type": "UINT_8", "quantization_mode": "TF"}
+                ],
+                "core_types": ["DSP"]
+            }
+        ],
+        "UDO_PACKAGE_NAME": "SoftmaxUdoPackage"
+    }
+}
