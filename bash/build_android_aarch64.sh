@@ -45,4 +45,4 @@ cp  build_android_aarch64/$BUILD_DIR/src/*.so $DEMO_DIR
 cp  ./model/hlandmark.dlc $DEMO_DIR
 cp  ./snpe/lib/aarch64-android-clang6.0/*.so $DEMO_DIR
 cp  -rf ./snpe/lib/dsp $DEMO_DIR
-cp  ./data/test.jpg $DEMO_DIR
+cp  ./data/hand.jpg $DEMO_DIR
