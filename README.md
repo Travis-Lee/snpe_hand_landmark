@@ -6,3 +6,8 @@ How to run this project under android system:
 3) At last, we can get display's results on your local develop path. 
 
 ie, we need android ndk and cmake for realise above step.
+
+If you have any questions, plz contact me by email 529808218@qq.com or qq
+529808218.
+
+
