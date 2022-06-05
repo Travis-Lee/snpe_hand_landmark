@@ -1,0 +1,12 @@
+{
+    "Artifacts": {
+        "arm-linux-gcc4.9sf": [
+            "snpe-net-run",
+            "libSNPE.so"
+        ],
+        "x86_64-linux-clang": [
+            "snpe-dlc-info",
+            "snpe-diagview"
+        ]
+    }
+ }

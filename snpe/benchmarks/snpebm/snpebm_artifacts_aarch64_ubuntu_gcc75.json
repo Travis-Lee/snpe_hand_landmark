@@ -1,0 +1,18 @@
+{
+    "Artifacts": {
+        "aarch64-ubuntu-gcc7.5": [
+            "snpe-net-run",
+            "libSNPE.so",
+            "libsnpe_dsp_domains_v2.so",
+            "libhta.so"
+        ],
+        "x86_64-linux-clang": [
+            "snpe-dlc-info",
+            "snpe-diagview"
+        ],
+        "dsp": [
+            "libsnpe_dsp_v66_domains_v2_skel.so",
+            "libsnpe_dsp_v65_domains_v2_skel.so"
+        ]
+    }
+}

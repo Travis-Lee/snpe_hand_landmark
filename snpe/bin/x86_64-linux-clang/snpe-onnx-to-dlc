@@ -1,0 +1,38 @@
+#!/usr/bin/env python3
+# -*- mode: python -*-
+# ==============================================================================
+#
+#  Copyright (c) 2018-2020 Qualcomm Technologies, Inc.
+#  All Rights Reserved.
+#  Confidential and Proprietary - Qualcomm Technologies, Inc.
+# ==============================================================================
+import sys
+import traceback
+
+try:
+    import qti.aisw
+except ImportError as ie1:
+    print("Failed to find necessary python package")
+    print(str(ie1))
+    print("Please ensure that $SNPE_ROOT/lib/python is in your PYTHONPATH")
+    sys.exit(1)
+
+from qti.aisw.converters import onnx as onnx_converter
+from qti.aisw.converters.backend import ir_to_native_backend
+
+if __name__ == '__main__':
+    try:
+        parser = onnx_converter.OnnxConverter.ArgParser(backend_framework="DLC")
+        converter = onnx_converter.OnnxConverter(parser.parse_args())
+        graph = converter.convert()
+        optimized_graph = converter.ir_optimize(graph, perform_axes_to_spatial_first_order=True, chain_eltwise_ops=True)
+
+        # save native model
+        ir_to_native_backend.save(optimized_graph, converter)
+    except Exception as e:
+        print("Encountered Error: {}".format(str(e)))
+        print()
+        print('Stack Trace:')
+        traceback.print_exc()
+        sys.exit(1)
+    sys.exit(0)
