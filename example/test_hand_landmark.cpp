@@ -65,13 +65,7 @@ int main(int argc,char* argv[]){
    }
   
     const char* img_path=argv[3];
-    cv::Mat org_img=cv::imread(img_path);
-    
-
-    cv::Mat tmp_img;
-    cv::cvtColor(org_img,tmp_img,CV_BGR2GRAY);
-    cv::Mat img;
-    cv::cvtColor(tmp_img,img,CV_GRAY2BGR);
+    cv::Mat img=cv::imread(img_path);
 
     int src_w = img.cols;
     int src_h = img.rows;
@@ -84,9 +78,8 @@ int main(int argc,char* argv[]){
     printf("========>width:%d,height:%d\n",input_width,input_height);
     cv::Mat mat_resize=cv::Mat(input_height,input_width,CV_8UC3,cv::Scalar::all(0));
     cv::resize(img, mat_resize, cv::Size(input_width, input_height), cv::INTER_LINEAR);
-    printf("debug111");
 
-    cv::Mat input_mat = normalize(mat_resize);
+   cv::Mat input_mat = normalize(mat_resize);
    int object_num=0;
  
    for (int i=0;i<1;i++){
